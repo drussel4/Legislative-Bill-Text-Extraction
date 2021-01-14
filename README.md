@@ -13,9 +13,14 @@ First, we use the selenium package to navigate to the search site. This form acc
 ![bill_search](https://github.com/drussel4/Text-Extraction/blob/master/img/HowToUse/bill_search.png?raw=true)
 
 Selenium sends keys to the form.
+
 ![bill_search_filled_in](https://github.com/drussel4/Text-Extraction/blob/master/img/HowToUse/bill_search_filled_in.png?raw=true)
 
+The retrieveBills() function loops through each bill.
+
 ![retrieveBills1](https://github.com/drussel4/Text-Extraction/blob/master/img/HowToUse/retrieveBills1.png?raw=true)
+
+We use xpaths to access elements of the webpage.
 
 ![retrieveBills2](https://github.com/drussel4/Text-Extraction/blob/master/img/HowToUse/retrieveBills2.png?raw=true)
 
@@ -27,9 +32,15 @@ Then it reads and downloads the PDF of the latest version of the bill, in offici
 
 ![retrieveBills3](https://github.com/drussel4/Text-Extraction/blob/master/img/HowToUse/retrieveBills3.png?raw=true)
 
+We retrieve a handful of elements from the description page: bill number, bill name, sponsors, and keywords.
+
 ![bill_description_example](https://github.com/drussel4/Text-Extraction/blob/master/img/HowToUse/bill_description_example.png?raw=true)
 
+Then we click into the bill itself.
+
 ![text_extractor](https://github.com/drussel4/Text-Extraction/blob/master/img/HowToUse/text_extractor.png?raw=true)
+
+We download the pdf to a directory designated by the user (must update selenium driver options to allow direct lownloads). Then extract the raw text from the pdf document.
 
 ![bill_text_example](https://github.com/drussel4/Text-Extraction/blob/master/img/HowToUse/bill_text_example.png?raw=true)
 
@@ -37,19 +48,18 @@ Our code extracts text on a page-by-page basis and stores each as an element in 
 
 ![page_compiler](https://github.com/drussel4/Text-Extraction/blob/master/img/HowToUse/page_compiler.png?raw=true)
 
+The pdfExtractor() method leverages the text_extractor() and page_compiler() sub-methods.
+
 ![pdfExtractor](https://github.com/drussel4/Text-Extraction/blob/master/img/HowToUse/pdfExtractor.png?raw=true)
+
+The retrieval portion of the code is complete! Now we want to see what we've got.
 
 Having retrieved metadata and raw text for each bill, we generate three exhibits:
 1. A wordcloud that showcases the frequency of terms in the raw text of every bill that was returned in the search results.
-2. A bar chart displaying the frequency of sponsors on the bills returned in the search results. In this way we can see the legislators that collaborate most frequently with the legislator we searched on.
-3. A bar chart displaying the frequency of key terms associated with the bills returned in the search results. In this way we can see the pursued by the legislator we searched on.
-
-1. WordCloud
 ![wordcloud_exhibit](https://github.com/drussel4/Text-Extraction/blob/master/img/Exhibits/wc_exhibit.png?raw=true)
 
-2. Sponsors
+2. A bar chart displaying the frequency of sponsors on the bills returned in the search results. In this way we can see the legislators that collaborate most frequently with the legislator we searched on.
 ![sponsors_exhibit](https://github.com/drussel4/Text-Extraction/blob/master/img/Exhibits/sponsors_exhibit.png?raw=true)
 
-3. Key Terms
+3. A bar chart displaying the frequency of key terms associated with the bills returned in the search results. In this way we can see the pursued by the legislator we searched on.
 ![keywords_exhibit](https://github.com/drussel4/Text-Extraction/blob/master/img/Exhibits/keywords_exhibit.png?raw=true)
-
