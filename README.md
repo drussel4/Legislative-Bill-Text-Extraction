@@ -13,7 +13,7 @@ Version 1
 First, we use the selenium package to navigate to the search site. This form accepts a number of inputs, including key terms to search on as well as the session to filter by. Selenium navigates to these input boxes and dropdowns using xpaths to target the elements. Having filled these inputs, it clicks the Search button.
 
 bill_search
-![bill_search](https://github.com/[drussel4]/[Text-Extraction]/blob/[img]/[HowToUse]/bill_search.png?raw=true)
+![bill_search](https://github.com/[drussel4]/[Text-Extraction]/blob/master/[img]/[HowToUse]/bill_search.png?raw=true)
 
 bill_search_filled_in
 
