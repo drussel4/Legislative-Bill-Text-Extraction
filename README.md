@@ -57,7 +57,7 @@ The retrieval portion of the code is complete! Now we want to see what we've got
 Having retrieved metadata and raw text for each bill, we generate three exhibits:
 1. A wordcloud that showcases the frequency of terms in the raw text of every bill that was returned in the search results.
 
-![wordcloud_exhibit](<img src="https://github.com/drussel4/Text-Extraction/blob/master/img/Exhibits/wc_exhibit.png?raw=true" width="100")
+![wordcloud_exhibit](https://github.com/drussel4/Text-Extraction/blob/master/img/Exhibits/wc_exhibit.png?raw=true)
 
 2. A bar chart displaying the frequency of sponsors on the bills returned in the search results. In this way we can see the legislators that collaborate most frequently with the legislator we searched on.
 
