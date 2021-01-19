@@ -1,4 +1,4 @@
-## Legislative-Bill-Text-Extraction
+# Legislative-Bill-Text-Extraction
 This python script downloads North Carolina General Assembly bills as pdfs and extracts text for analysis. The goal is to quickly summarize information about the bills a particular legislator sponsored, such as which other legislators he or she cosponsors bills with and the topics they most often pursue policy on. This python script performs a search on the North Carolina Legislature's bill search website. The user provies keyword(s) to search on, such as a legislator's name, as well as the legislative session to search on (e.g., 2019-2020 session).
 
 ## Usage
