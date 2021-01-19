@@ -2,7 +2,7 @@
 This python script downloads North Carolina General Assembly bills as pdfs and extracts text for analysis. The goal is to quickly summarize information about the bills a particular legislator sponsored, such as which other legislators he or she cosponsors bills with and the topics they most often pursue policy on. This python script performs a search on the North Carolina Legislature's bill search website. The user provies keyword(s) to search on, such as a legislator's name, as well as the legislative session to search on (e.g., 2019-2020 session).
 
 ## Usage
-First, we use the selenium package to navigate to the search site. This form accepts a number of inputs, including key terms to search on as well as the session to filter by. Selenium navigates to these input boxes and dropdowns using xpaths to target the elements. Having filled these inputs, it clicks the Search button.
+First, we use the selenium package to navigate to the search site: https://www.ncleg.gov/Search/BillText. This form accepts a number of inputs, including key terms to search on as well as the session to filter by. Selenium navigates to these input boxes and dropdowns using xpaths to target the elements. Having filled these inputs, it clicks the Search button.
 
 ![bill_search](https://github.com/drussel4/Text-Extraction/blob/master/img/HowToUse/bill_search.png?raw=true)
 
